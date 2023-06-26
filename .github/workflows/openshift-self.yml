@@ -78,7 +78,7 @@ jobs:
         echo "TAG=latest ${GITHUB_SHA::7}" | tee -a $GITHUB_ENV
 
     # https://github.com/redhat-actions/buildah-build#readme
-    - name: Build from Dockerfile
+    - name: Build from Containerfile
       uses: redhat-actions/buildah-build@v2
       with:
         image: ${{ env.APP_NAME }}
