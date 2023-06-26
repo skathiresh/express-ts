@@ -87,7 +87,7 @@ jobs:
         # https://github.com/redhat-actions/buildah-build#building-from-scratch
         # Otherwise, point this to your Dockerfile relative to the repository root.
         dockerfiles: |
-          ./Dockerfile
+          ./Containerfile
 
     # https://github.com/redhat-actions/push-to-registry#readme
     - name: Push to registry
